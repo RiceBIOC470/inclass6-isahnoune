@@ -7,6 +7,18 @@
 % function which takes your structure array of students as input and returns
 % the average age of the students. 
 
+%a
+
+names = ['Anna', 'Bob', 'Carol']
+ages = [23,26,24]
+grades = [true, false, true]
+
+students = studentarray(names,ages,grades)
+averageage = studentaverageage(students)
+
+
+
+
 %2. In this folder, you will find an immunofluorescence image of human stem
 %cells stained for a gene called SOX2. Write a function which takes a
 %filename as input and returns a structure containing metaData. Include at
@@ -17,3 +29,9 @@
 %from the camera out of this field. (Hint: it is preceded by the words
 %"Actual Temperature" which don't appear anywhere else in
 %ImageDescription). 
+
+SOX2_metadata = returnMetaData('160611-AntiNodal-SD20x_f0003_w0002.tif')
+
+img_temp = actualTemp('160611-AntiNodal-SD20x_f0003_w0002.tif')
+
+
